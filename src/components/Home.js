@@ -1,10 +1,11 @@
 // We'll need React Router's hook to navigate around
+import { useNavigate } from "react-router-dom"
 
 export default function Home() {
-
+const navigate = useNavigate();
   // 👉 STEP 5 - Build a click handler that will imperatively navigate us to /items-list
   const routeToShop = () => {
-
+    navigate('/items-list')
   }
 
   return (
